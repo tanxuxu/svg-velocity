@@ -1,0 +1,380 @@
+html{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body{width:100%; height: 100%; font-family: "微软雅黑"; font-size: 14px;}
+#main{
+	height: 100%;
+}
+#main .page{
+	height: 100%;
+	width: 100%;
+}
+.page .container {
+    width: 960px;
+    height: 75%;
+    margin:0px auto;
+    vertical-align: middle;
+    position: relative;
+}
+.page .drawing{
+  height: 3px;
+  background:#000;
+  z-index: 8;
+  width:0px;
+  position: absolute;
+  left: 0px;
+  z-index: 0;
+}
+
+/*#nav*/
+#nav{
+	position: fixed;
+	left: 0px;
+	top: 20px;
+}
+#nav li{
+	float: left;
+	list-style: none;
+	padding: 0px 20px;
+}
+#nav li:first-child{
+	border-right: 1px solid #ddd;
+}
+#nav li a{
+	text-decoration: none;
+	color: #999;
+}
+#nav li a:hover{
+	color: #666;
+}
+#nav  li span{
+	    margin: 0px 10px 0px 0px;
+    font-size: 16px;
+}
+/*slidebar*/
+#slidebar{
+	width: 280px;
+	overflow: hidden;
+	border-right: 3px solid #000;
+	position: fixed;
+	left: -283px;
+	top: 0px;
+	height: 75%;
+	border-bottom: 3px solid #fff;
+	background:#fff;
+
+}
+#slidebar .close_slidebar{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 20px;
+}
+#slidebar .close_slidebar span{
+	margin-left: 20px;
+	font-size: 28px;
+	color: #000;
+	cursor: pointer;
+}
+#slidebar .img_wrap{
+	width:150px;
+	height: 150px;
+	background: url(../img/human.jpg) no-repeat center center;
+	border-radius: 50%;
+	overflow: hidden;
+	background-size: cover;
+	margin-top: -250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+#slidebar h2{
+	text-align: center;
+	color: #000;
+	opacity: 0;
+}
+#slidebar>p{
+	opacity: 0;
+}
+#slidebar p{
+	padding: 0px 30px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}
+#slidebar .human_info{
+	padding-left: 50px;opacity: 0;
+}
+#slidebar .human_info p{
+	text-align: left;
+}
+/*前进后退按钮*/
+.gotoPage{
+    position: fixed;
+    right: 40px;
+    bottom: 93px;
+    border: 1px solid #999;
+    background: #fff;
+}
+.gotoPage ul{
+	margin: 0px;
+	padding: 0px;
+}
+.gotoPage li{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	list-style: none;
+	float: left;
+	cursor: pointer;
+}
+.gotoPage li i{
+	font-size: 24px;
+	color: #999;
+}
+.gotoPage li:first-child{
+	border-right: 1px solid #999;
+}
+.gotoPage li:hover{
+	background: #999999;
+	transition: all 0.3s ease-in;
+}
+.gotoPage li:hover i{
+	color: #FFFFFF;
+	transition: all 0.3s ease-in;
+}
+
+
+/*school*/
+#mySchool{
+	position:absolute;
+	bottom: -82px;
+	left: 0px;
+}
+.page1 .cloud01,.page1 .cloud02{
+	position: absolute;
+	transform: scale(1.1);
+	
+}
+.page1 .cloud02{
+    top: 200px;
+    left: 310px;
+}
+.page1 .cloud01{
+    top: 200px;
+    left: 92px;
+}
+.page1 .text_desc,.page2 .text_desc,.page3 .text_desc,.page4 .text_desc{
+	width:300px;
+	height: 50px;
+	position:absolute;
+	right: 30px;
+	top: 80px;
+	opacity: 0;
+}
+.text_desc .left_yin,.text_desc .right_yin{
+	 position: absolute;
+	     font-size: 27px;
+    color: #ccc;
+}
+.text_desc .left_yin{
+	  left: -38px;
+    top: 0px;
+}
+
+.text_desc p{
+	color: #999;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.text_desc .gotoMore{
+    position: absolute;
+    top: 71px;
+    right: 40px;
+    font-size: 32px;
+    color: #000;
+    cursor: pointer;
+}
+.page2 .text_desc .gotoMore{
+	 top: 100px;
+	 right: 130px;
+}
+/*console_wrap*/
+.console_wrap{
+	position: absolute;
+	right: 20px;
+	top: 200px;
+	width: 300px;
+	height: 80px;
+	background: #ddd;
+	outline: none;
+	overflow-y: scroll;
+	padding: 10px;
+	
+}
+.my_tree{
+	position: absolute;
+  right: 50px;
+  bottom: -3px;
+  stroke-dasharray: 100000000;
+  stroke-dashoffset: 10000000000000000000000;
+}
+.footer_wrap{
+	height: 50px;
+	background: #eee;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.footer_in{
+	text-align: center;
+}
+.footer_in p a{
+	margin: 0px 20px;
+	font-size: 12px;
+	color: #999;
+	text-decoration:none;
+}
+/*skills*/
+#skills{
+    position: absolute;
+    bottom: -54px;
+    left: 0px;
+}
+.page2 .ract{
+	position: absolute;
+	opacity: 0;
+}
+.page2 .ract_01{
+	left: 35px;
+}
+.page2 .ract_02{
+	left: 43px;
+}
+.page2 .ract_03{
+	left: 55px;
+}
+.page2 .ract_01,.page2 .ract_02,.page2 .ract_03{
+	top: 10px;
+}
+.page2 .ract_04,.page2 .ract_05,.page2 .ract_06{
+	top: 10px;
+}
+.page2 .ract_04{
+	left: 342px;
+}
+.page2 .ract_05{
+	left: 345px;
+}
+.page2 .ract_06{
+	left: 366px;
+}
+
+
+.ract_left,.ract_right{
+    position: absolute;
+    top: 165px;
+    background: #000000;
+    width: 90px;
+    height: 90px;
+    opacity: 0;
+}
+.ract_left{
+	left: 55px;
+}
+.ract_right{
+	
+	left: 365px;
+}
+.page .label_wrap{
+    width: 340px;
+    background: #eee;
+    overflow-y: scroll;
+    color: #333;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 256px;
+    opacity: 0;
+}
+.page ul{
+	padding: 0px;
+	padding-left: 10px;
+}
+.page ul li{
+	margin: 5px;
+	background: #fafafa;
+	border-radius: 5px;
+	overflow: hidden;
+	float: left;
+	padding: 10px;
+	font-style: oblique;
+}
+
+
+/*.page3*/
+#dai{
+	  display: inline-block;
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+}
+#dai path{
+	stroke-dasharray: 1000000000000000;
+	stroke-dashoffset: 100000000000000000000;
+}
+.page3 .dai_item{
+	position: absolute;
+	left: 10px;
+	top: -240px;
+	opacity: 0;
+	z-index: -1;
+}
+#myWork_4{
+	background: #fff;
+	position: relative;
+	z-index: 999999;
+}
+.page3 .dai_item_01{
+
+}
+.smoke {
+	position: absolute;
+	left:153px;
+	bottom: 290px;
+}
+
+/**/
+#myPen{
+	 position: absolute;
+    bottom: -6px;
+    left: 0px;
+}
+.reward_ewm{
+		position: absolute;
+    right: 14px;
+    bottom: 100px;
+    text-align: center;
+    opacity: 0;
+}
+.reward_ewm p{
+	line-height: 20px;
+	margin: 0px;
+}
+.reward_ewm img{
+	width: 50%;
+}
+/*动画处理*/
+#mySchool path,#myWork path,#skills path,#myPen path{
+	stroke-dasharray: 1000000000000;
+	stroke-dashoffset: 100000000000;
+}
+.page1 .cloud{
+	opacity: 0;
+}

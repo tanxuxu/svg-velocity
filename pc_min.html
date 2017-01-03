@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>提示信息</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		img{
+			max-width: 100%;
+			margin-top: 30%;
+		}
+	</style>
+</head>
+<body>
+	<img src="img/pc_min.jpg"/>
+		<script src="js/jquery.js"></script>
+		<script>
+			$(function(){
+				resetWidnow()
+				$(window).resize(function(){
+					resetWidnow();
+				})
+				function resetWidnow(){
+					if($(window).width()>960){
+						window.location.href = './index.html';
+					}
+				}
+			})
+		</script>
+</body>
+</html>
